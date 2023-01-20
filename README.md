@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL:](https://github.com/brilliant-smart/product-preview-card-component.git)
-- Live Site URL: [Live site URL:](https://your-live-site-url.com)
+- Live Site URL: [Live site URL:](https://brilliant-smart.github.io/product-preview-card-component/)
 
 ### Built with
 
