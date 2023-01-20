@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Very-dark-cyan: Hsl(158, 26%, 22%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background: var(--Cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 15%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.product-picture {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.product-category {
+  font-family: 'Montserrat';
+  letter-spacing: 0.5rem;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.product-title {
+  font-family: 'Fraunces';
+  font-weight: 700;
+  color: var(--Very-dark-blue);
+}
+
+.product-text {
+  font-family: 'Montserrat';
+  color: var(--Dark-grayish-blue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.promo-price {
+  font-family: 'Fraunces';
+  font-weight: 700;
+  color: var(--Dark-cyan);
+  display: inline-block;
+}
+
+.original-price {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+  display: inline-block;
+  vertical-align: super;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    background: var(--White);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+.add-to-cart {
+  background-color: var(--Dark-cyan);
+  width: 100%;
+}
+
+.add-to-cart:hover {
+  background: var(--Very-dark-cyan);
+}
+
+@media (max-width: 768px) {
+  .product-image-col {
+    background: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .product-info {
+    background-color: var(--White);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .product-image-col {
+    background-image: url("../../assets/img/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+@media (min-width: 855px) {
+  .wrapper {
+    padding: 2rem 1rem 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 614px !important;
+  }
+
+}
